@@ -66,7 +66,7 @@ app.get("/hotels",async(req,res)=>{
 async function readAllbyName(hotelName){
    try{
     const nameHotel=await Hotel.findOne({name:hotelName})
-    console.log(nameHotel)
+    
     return(nameHotel)
    }catch(error){
     throw(error)
